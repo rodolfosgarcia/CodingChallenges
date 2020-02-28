@@ -33,11 +33,18 @@ root.right = Node(12)
 root.left.left = Node(2) 
 root.left.right = Node(6) 
   
+root.left.left.left = Node(1) 
+root.left.left.right = Node(3) 
+
 root.right.left = Node(10) 
 root.right.right = Node(14) 
 
+root.right.right.left = Node(13) 
+root.right.right.right = Node(16) 
 
-for i in range(1, 14):
+
+
+for i in range(1, 18):
     print (str(i) + '  ' + str(findCeilingFloor(root, i)))
 
 print(findCeilingFloor(root, 5))
